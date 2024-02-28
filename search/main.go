@@ -49,7 +49,7 @@ type Response struct {
 func searchData(data []byte) (*Response, error) {
 	//user := "jgarcia025@gmail.com"
 	//key := "kq8JH24j3i1675AQl90p"
-	//url := "https://api.openobserve.ai/api/jhon_jairo_organization_6007_ktWTtLeSrd5sd63/default/_json"
+	//url := "https://api.openobserve.ai/api/jhon_jairo_organization_6007_ktWTtLeSrd5sd63/_search"
 	user := "root@example.com"
 	key := "Complexpass#123"
 	url := "http://localhost:5080/api/openobserve/_search"
@@ -108,8 +108,8 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 	jsonString := fmt.Sprintf(`{
         "query": {
             "sql": "SELECT * FROM default WHERE Body LIKE '%%%s%%'",
-            "start_time": 1707503203844188,
-            "end_time":   1708456667721113,
+            "start_time": 1709148068892970,
+            "end_time":   1709152167862312,
             "from": %s,
             "size": 10
         }
